@@ -1,0 +1,147 @@
+/* CSS Default reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+image,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  display: inline-block;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+/* Styling contents */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("/images/Frame\ 1.png");
+    background-position: center center;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+    user-select: none;
+    font-weight: 600;
+}
+
+.liham {
+  
+}
+
+.paper {
+    background-image: url("/images/Paper.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 100px;
+    transform: rotateZ(-5deg);
+    box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paper.image {
+    padding: 10px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    user-select: none;
+}
+
+.liham-png {
+  height: 700px;
+  width: 700px;
+}
+
+.blur {
+  filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur p {
+  position: absolute;
+}
+
+
+
+
+
